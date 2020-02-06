@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.razertask.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +29,8 @@ public class DashboardFragment extends Fragment {
         // Required empty public constructor
     }
 
+    BottomSheetBehavior bottomSheetBehavior;
+    View bottomSheet;
     ImageView imageLeftBud, imageViewRightBud, batterleft, batteryRight;
     LinearLayout settingLayout;
     Button btnRemap, btnTutorial;
@@ -38,6 +41,7 @@ public class DashboardFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
         initViews(v);
         launchDashboard();
         return v;
@@ -53,6 +57,7 @@ public class DashboardFragment extends Fragment {
         batteryRight = (ImageView) view.findViewById(R.id.imageView5);
         textViewleft = (TextView) view.findViewById(R.id.textView2);
         textViewRight = (TextView) view.findViewById(R.id.textView3);
+
 
         settingLayout.setVisibility(View.GONE);
         btnRemap.setVisibility(View.GONE);
@@ -92,5 +97,10 @@ public class DashboardFragment extends Fragment {
                 settingLayout.setVisibility(View.VISIBLE);
             }
         }, 800);
+
+
+//        bottomSheet = getActivity().findViewById(R.id.bottom_sheet);
+//        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+
     }
 }

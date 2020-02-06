@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    android:id="@+id/bottom_sheet"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/default_"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:text="@string/bass_boost"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/terible"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp" />
+
+</LinearLayout>

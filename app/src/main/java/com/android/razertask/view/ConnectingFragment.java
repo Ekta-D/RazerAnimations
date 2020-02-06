@@ -99,7 +99,7 @@ public class ConnectingFragment extends Fragment {
                 progressBar.setVisibility(View.GONE);
                 start_fragment();
             }
-        }, 1000);
+        }, 5000);
 
     }
 

@@ -7,4 +7,5 @@
     <color name="cancel_btn_color">#FFFFFF</color>
     <color name="textColor">#FFFFFF</color>
     <color name="PinkFlavout">#EE125D</color>
+    <color name="bottomTextColor">#EE125D</color>
 </resources>
