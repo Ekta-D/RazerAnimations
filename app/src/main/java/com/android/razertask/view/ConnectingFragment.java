@@ -2,16 +2,10 @@ package com.android.razertask.view;
 
 
 import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
-import android.graphics.Path;
-import android.media.Image;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProviders;
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 import android.os.Handler;
@@ -19,18 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.PathInterpolator;
+
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.android.razertask.R;
-import com.android.razertask.viewmodel.ViewModelProvider;
 
-import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,7 +36,7 @@ public class ConnectingFragment extends Fragment {
     TextView textView;
     MaterialProgressBar progressBar;
     Button button, button_cancel;
-
+    LinearLayout settingLayout;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -72,7 +61,6 @@ public class ConnectingFragment extends Fragment {
                 button_cancel.setEnabled(false);
             }
         });
-        ViewModelProvider viewModelProvider = ViewModelProviders.of(getActivity()).get(ViewModelProvider.class);
 
         return v;
     }
@@ -99,6 +87,7 @@ public class ConnectingFragment extends Fragment {
                 textView.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.VISIBLE);
                 textView.setText("Searching...");
+                settingLayout.setVisibility(View.INVISIBLE);
                 textView.setAllCaps(true);
             }
         }, 300);
@@ -121,6 +110,7 @@ public class ConnectingFragment extends Fragment {
         progressBar = (MaterialProgressBar) v.findViewById(R.id.progress_horizontal);
         button = (Button) v.findViewById(R.id.button);
         button_cancel = (Button) v.findViewById(R.id.button_cancel);
+        settingLayout=(LinearLayout)v.findViewById(R.id.setting_layout);
         textView.setText("Connecting...");
         textView.setAllCaps(true);
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#44D62C</color>
-    <color name="colorPrimaryDark">#44D62C</color>
-    <color name="colorAccent">#44D62C</color>
+    <color name="colorPrimary">#EE125D</color>
+    <color name="colorPrimaryDark">#EE125D</color>
+    <color name="colorAccent">#EE125D</color>
     <color name="bg_color">#5F5E5E</color>
     <color name="cancel_btn_color">#FFFFFF</color>
     <color name="textColor">#FFFFFF</color>

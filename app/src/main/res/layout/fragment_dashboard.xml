@@ -26,7 +26,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:drawableTop="@drawable/header_title"
-
         app:layout_constraintEnd_toStartOf="@+id/setting_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -107,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/earbud_right" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnRemap"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
@@ -120,7 +119,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnTutorial"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
@@ -131,7 +130,9 @@
         android:background="@drawable/round_corner_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRemap" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

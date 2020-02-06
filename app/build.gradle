@@ -20,14 +20,14 @@ android {
 
     flavorDimensions "content", "mode"
     productFlavors {
-        elvispresley {
-            applicationId 'com.android.razerpink'
-            versionCode 1
+        pinkflavour {
+            applicationId 'com.android.application.razerpink'
+            versionCode 2
             versionName '1.0'
             dimension "content"
         }
-        whitneyhouston {
-            applicationId 'com.android.razergreen'
+        greenflavour {
+            applicationId 'com.android.application.razergreen'
             versionCode 2
             versionName '1.0.1'
             dimension "content"
@@ -55,21 +55,6 @@ dependencies {
     implementation 'android.arch.lifecycle:viewmodel:1.1.1'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     annotationProcessor 'android.arch.lifecycle:compiler:1.1.1'
-
-    implementation 'com.github.bumptech.glide:glide:4.3.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
-
-    // Dagger
-    def dagger_version = "2.22"
-
-    // Dagger2 core
-    implementation "com.google.dagger:dagger:$dagger_version"
-    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
-
-    // Dagger Android
-    implementation "com.google.dagger:dagger-android:$dagger_version"
-    implementation "com.google.dagger:dagger-android-support:$dagger_version"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
 
     //Material progress bar
     implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
